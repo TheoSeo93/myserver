@@ -2,7 +2,7 @@ from django.db import models
 
 
 class MenuSection(models.Model):
-    id = models.AutoField(primary_key=True)
+    id = models.BigIntegerField(primary_key=True)
     name = models.CharField(max_length=20)
 
     def __str__(self):
