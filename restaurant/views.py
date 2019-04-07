@@ -11,7 +11,7 @@ from .models import MenuSection
 
 class SectionList(APIView):
     """
-    List all snippets, or create a new snippet.
+    List all Menu Sections, or create a new one.
     """
 
     def get(self, request, format=None):
@@ -30,9 +30,6 @@ class SectionList(APIView):
 
 
 class SectionDetail(APIView):
-    """
-    Retrieve, update or delete a snippet instance.
-    """
 
     def get_object_by_id(self, pk):
         try:
